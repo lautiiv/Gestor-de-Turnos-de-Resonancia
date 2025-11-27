@@ -1,7 +1,7 @@
 class Paciente:
     def __init__(self,id_paciente,nombre,apellido,edad,obra_social,telefono):
         
-        self.__id_paciente = None
+        self.__id_paciente = id_paciente
         self.__nombre = nombre
         self.__apellido = apellido
         self.__edad = edad
@@ -43,7 +43,7 @@ class Paciente:
     
     @obra_social.setter
     def obra_social(self,nueva_obra_social):
-        self._obra_social == nueva_obra_social
+        self._obra_social = nueva_obra_social
         
     @property
     def telefono(self):
@@ -51,6 +51,6 @@ class Paciente:
     
     @telefono.setter
     def telefono(self,nuevo_telefono):
-        self.telefono == nuevo_telefono
+        self.__telefono = nuevo_telefono
     
     

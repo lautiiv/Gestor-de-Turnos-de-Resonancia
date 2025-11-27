@@ -15,23 +15,25 @@ paciente1 = Paciente(None,"Lautaro","Villafañe",27,"Boreal",2954337927)
 
 def test_paciente(dato,valor_esperado):
     assert dato == valor_esperado
+
+paciente2 = Paciente(None,"Pedro","Jalisco",99,"Particular",2660303456)
     
 def test_setter_nombre():
-    nuevo_nombre = paciente1.nombre = "Candela"
-    assert nuevo_nombre == "Candela"
+    paciente2.nombre = "Candela"
+    assert paciente2.nombre == "Candela"
     
 def test_setter_apellido():
-    nuevo_apellido = paciente1.apellido = "Pelegrino"
-    assert nuevo_apellido == "Pelegrino"
+    paciente2.apellido = "Pelegrino"
+    assert paciente2.apellido == "Pelegrino"
     
 def test_setter_edad():
-    nueva_edad = 26
-    assert nueva_edad == 26
+    paciente2.edad = 26
+    assert paciente2.edad == 26
     
 def test_setter_obra_social():
-    nueva_obra_social = "MET"
-    assert nueva_obra_social == "MET"
+    paciente2.obra_social = "MET"
+    assert paciente2.obra_social == "MET"
     
 def test_setter_telefono():
-    nuevo_telefono = 295533333
-    assert nuevo_telefono == 295533333
+    paciente2.telefono = 295533333
+    assert paciente2.telefono == 295533333
